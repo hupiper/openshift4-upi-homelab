@@ -1,0 +1,40 @@
+---
+disk: vda
+helper:
+  name: "helper"
+  ipaddr: "10.8.109.214"
+  networkifacename: "eth0"
+dns:
+  domain: "mdunnett.tamlab.rdu2.redhat.com"
+  clusterid: "ocp43"
+  forwarder1: "10.11.5.4"
+  forwarder2: "10.11.5.3"
+dhcp:
+  router: "10.8.109.254"
+  bcast: "10.8.109.255"
+  netmask: "255.255.255.0"
+  poolstart: "10.8.109.215"
+  poolend: "10.8.109.230"
+  ipid: "10.8.109.0"
+  netmaskid: "255.255.255.0"
+bootstrap:
+  name: "bootstrap"
+  ipaddr: "10.8.109.215"
+  macaddr: "56:6f:9e:11:00:32"
+masters:
+  - name: "master1"
+    ipaddr: "10.8.109.216"
+    macaddr: "56:6f:9e:11:00:35"
+  - name: "master2"
+    ipaddr: "10.8.109.217"
+    macaddr: "56:6f:9e:11:00:34" 
+  - name: "master3"
+    ipaddr: "10.8.109.218"
+    macaddr: "56:6f:9e:11:00:3f"
+workers:
+  - name: "worker1"
+    ipaddr: "10.8.109.219"
+    macaddr: "56:6f:9e:11:00:40"
+  - name: "worker2"
+    ipaddr: "10.8.109.220"
+    macaddr: "56:6f:9e:11:00:41"
